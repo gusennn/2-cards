@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all .2s;
+}
+
+:root {
+    --main-primary-color: #3aa;
+    --main-second-color: #3aa;
+    --theme-color: #123438;
+}
+
+body {
+    background: var(--theme-color) no-repeat;
+    display: flex;
+    height: 100%;
+    padding: 5%;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 150px;
+    font-size: 40px;
+    font-weight: bold;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #fff;
+    color: transparent;
+}
+
+.card.open {
+    color: #fff;
+    border: 3px solid #3aa;
+}
+
+.card.success {
+    color: #fff;
+    background: #3aa;
+}
