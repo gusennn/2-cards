@@ -73,7 +73,7 @@ let newGame = (container, cardsCount) => {
 
 
 
-newGame (document.getElementById ('game'), 16)
+newGame (document.getElementById ('game'), 8)
 
 
 
